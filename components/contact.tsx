@@ -50,13 +50,16 @@ export function Contact() {
 
       if (response.ok) {
         toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
+          title: "✅ Success",
+          description:
+            data.message ||
+            "Thank you for your message. I'll get back to you soon.",
+          duration: 4000,
         });
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         toast({
-          title: "Error",
+          title: "❌ Error",
           description:
             data.error || "Failed to send message. Please try again.",
           variant: "destructive",
@@ -64,8 +67,8 @@ export function Contact() {
       }
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
+        title: "❌ Error",
+        description: "Something went wrong. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -99,6 +102,10 @@ export function Contact() {
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-primary" />
                 <span>Lekki, Lagos, Nigeria</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary" />
+                <span>Akure, Ondo, Nigeria</span>
               </div>
             </div>
 
