@@ -114,7 +114,7 @@ export function Contact() {
               </Button>
               <Button variant="outline" size="icon" asChild>
                 <a
-                  href="https://linkedin.com/adedinijames"
+                  href="www.linkedin.com/in/james-adedini-6936a8192"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
