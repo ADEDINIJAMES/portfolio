@@ -82,7 +82,8 @@ export function Hero() {
               asChild
               className="gap-2 glass hover:scale-105 hover-lift bg-transparent"
             >
-              <a href="/James_Adedini_CV.pdf" download>
+              {/* <a href="/James_Adedini_CV.pdf" download> */}
+              <a href="https://flowcv.com/resume/pwoi31ver3" download>
                 <Download className="w-4 h-4" />
                 Download CV
               </a>
